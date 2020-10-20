@@ -1,11 +1,49 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>Streaming.lighting</title>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+            }
+            html{
+                font-family: sans-serif;
+            }
+            .center-text{
+                text-align: center;
+            }
+            .img-comparison{
+                display: flex;
+            }
+            .img-comparison figure {
+                max-width: 50%;
+            }
+            figure img{
+                max-width: 100%;
+            }
+            figcaption {
+                font-size: x-large;
+            }
+            iframe{
+                min-height: 100vh;
+            }
+        </style>
     </head>
     <body>
-        <h1>Streaming.lighting</h1>
-        <div>
+        <h1 class="center-text">Streaming.lighting</h1>
+        <div class="img-comparison">
+            <figure>
+                <figcaption class="center-text">Why be poorly lit... </figcaption>
+                <img src="img/poor-lighting.jpg" alt="A poorly lit person">
+
+            </figure>
+            <figure>
+                <figcaption class="center-text">...when you could look like this?</figcaption>
+                <img src="img/yay-lighting.jpg" alt="A well lit, happy person">
+            </figure>
+        </div>
+        <div class="center-text">
             Let me help you light your video streams. Twitch, Youtube, Zoom, Teams, I will help you out with all of these!
         </div>
         <!-- Calendly inline widget begin -->
