@@ -1,85 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Streaming.lighting</title>
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css">
         <style>
-            * {
-                margin:0;
-                padding:0;
-                box-sizing: border-box;
-            }
-            html{
-                font-family: sans-serif;
-                background-color: #ccc;
-            }
-            body{
-                display:flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-            }
-            body *{
-                max-width: 80vw;
-                min-width: 320px;
-            }
-            .center-text{
-                text-align: center;
-            }
-            .img-comparison{
-                display: flex;
-            }
-            .img-comparison figure {
-                max-width: 50%;
-                margin:8px;
-            }
-            figure img{
-                max-width: 100%;
-            }
-            figcaption {
-                font-size: x-large;
-            }
-            .details{
-                display: flex;
-                flex-flow: row nowrap;
-            }
-            .details p{
-                max-width: 50%;
-                margin: 8px;
+            html {
+                background-color: #fafafa;
             }
             iframe{
                 min-height: 100vh;
             }
             .calendly-inline-widget{
                 min-width:320px;
-                width: 80vw;
-                height:630px;
+                height:100vh;
             }
         </style>
     </head>
     <body>
-        <h1 class="center-text">Streaming.lighting</h1>
-        <div class="img-comparison">
-            <figure>
-                <figcaption class="center-text">Why be poorly lit... </figcaption>
-                <img src="img/poor-lighting.jpg" alt="A poorly lit person">
-
-            </figure>
-            <figure>
-                <figcaption class="center-text">...when you could look like this?</figcaption>
-                <img src="img/yay-lighting.jpg" alt="A well lit, happy person">
-            </figure>
-        </div>
-        <div class="details">
-            <p>
-                I have several years of professional lighting design experience after working in the Atlanta theatre scene.
-                Let my experience work for you! If you are unhappy with your current video streaming set up,
-                let me help you fix it up a little and be able to look lovely!
-            </p>
-            <blockquote>Let me help you light your video streams. Twitch, Youtube, Zoom, Teams, I will help you out with all of these!</blockquote>
-        </div>
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/streaming-lighting"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-        <!-- Calendly inline widget end -->
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Streaming.lighting</h1>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-header">
+                                <p class="card-header-title">Why be poorly lit... </p>
+                            </div>
+                            <div class="card-image is-16by9">
+                                <img src="img/poor-lighting.jpg" alt="A poorly lit person">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-header">
+                                <p class="card-header-title">...when you could look like this?</p>
+                            </div>
+                            <div class="card-image is-16by9">
+                                <img src="img/yay-lighting.jpg" alt="A well lit, happy person">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <p class="block">Hi, I'm <a href="https://alex.party/">Alex Riviere</a>. I currently do front-end web development, but in a former career, 
+                                        I was a professional lighting designer in the Atlanta theatre scene.</p>
+                                    <p class="block">Let my experience work for you! If you are unhappy with your current video streaming set up,
+                                    let me help you fix it up a little and be able to look lovely!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <p class="block">
+                                        Let me help you light your video streams. <strong>Twitch</strong>, <strong>YouTube</strong>, <strong>Zoom</strong>, <strong>Teams</strong>,
+                                        I will help you out with all of these!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/streaming-lighting"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                <!-- Calendly inline widget end -->
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Streaming.lighting</strong> is created by <a href="https://alex.party">Alex Riviere</a>. &copy; 2020
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
