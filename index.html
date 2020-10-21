@@ -6,10 +6,21 @@
             * {
                 margin:0;
                 padding:0;
+                box-sizing: border-box;
             }
             html{
                 font-family: sans-serif;
                 background-color: #ccc;
+            }
+            body{
+                display:flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+            body *{
+                max-width: 80vw;
+                min-width: 320px;
             }
             .center-text{
                 text-align: center;
@@ -19,6 +30,7 @@
             }
             .img-comparison figure {
                 max-width: 50%;
+                margin:8px;
             }
             figure img{
                 max-width: 100%;
@@ -26,8 +38,21 @@
             figcaption {
                 font-size: x-large;
             }
+            .details{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .details p{
+                max-width: 50%;
+                margin: 8px;
+            }
             iframe{
                 min-height: 100vh;
+            }
+            .calendly-inline-widget{
+                min-width:320px;
+                width: 80vw;
+                height:630px;
             }
         </style>
     </head>
@@ -44,11 +69,16 @@
                 <img src="img/yay-lighting.jpg" alt="A well lit, happy person">
             </figure>
         </div>
-        <div class="center-text">
-            Let me help you light your video streams. Twitch, Youtube, Zoom, Teams, I will help you out with all of these!
+        <div class="details">
+            <p>
+                I have several years of professional lighting design experience after working in the Atlanta theatre scene.
+                Let my experience work for you! If you are unhappy with your current video streaming set up,
+                let me help you fix it up a little and be able to look lovely!
+            </p>
+            <blockquote>Let me help you light your video streams. Twitch, Youtube, Zoom, Teams, I will help you out with all of these!</blockquote>
         </div>
         <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/streaming-lighting" style="min-width:320px;height:630px;"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/streaming-lighting"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         <!-- Calendly inline widget end -->
     </body>
